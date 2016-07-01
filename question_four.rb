@@ -10,4 +10,6 @@ CSV.foreach("data/source1.csv", headers: true) do |row|
   end
 end
 
+binding.pry
+
 puts Campaign.cost_per_video_view
