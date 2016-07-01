@@ -33,7 +33,7 @@ class Campaign
     self.campaigns_in_month(month).count
   end
 
-  def self.campaign_types_in_month(month)
+  def self.campaign_types_in_month(month) #returns a list of unique initiative-asset-audience combinations for a given month
     all = self.campaigns_in_month(month)
     array = all.map{|campaign| campaign.name}
     array.uniq
